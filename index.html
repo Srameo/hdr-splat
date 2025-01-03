@@ -185,6 +185,11 @@
 			body.nohf #progress, body.nohf .cube-face {
 				background: #ff9d0d;
 			}
+			
+			#Slider {
+				width: 100px;
+				margin-right: 10px;
+			}
 		</style>
 	</head>
 	<body>
@@ -192,12 +197,12 @@
 			if(location.host.includes('hf.space')) document.body.classList.add('nohf');
 		</script>
 		<div id="info">
-			<h3 class="nohf">WebGL 3D Gaussian Splat Viewer</h3>
+			<h3 class="nohf">WebGL <span style="color: #ff9d0d;">(HDR)</span> 3D Gaussian Splat Viewer</h3>
 			<p>
 			<small class="nohf">
-				By <a href="https://twitter.com/antimatter15">Kevin Kwok</a>.
+				By <a href="https://srameo.github.io">Xin Jin</a>, original code from <a href="https://twitter.com/antimatter15">Kevin Kwok</a>.
 				Code on
-				<a href="https://github.com/antimatter15/splat">Github</a
+				<a href="https://github.com/Sramep/hdr-splat">Github</a
 				>.
 			</small>
 		</p>
@@ -236,11 +241,8 @@ gamepad
 - if you have a game controller connected it should work
 
 other
-- press 0-9 to switch to one of the pre-loaded camera views
-- press '-' or '+'key to cycle loaded cameras
 - press p to resume default animation
-- drag and drop .ply file to convert to .splat
-- drag and drop cameras.json to load cameras
+- use the slider at bottom right corner for editing!
 </div>
 
 		</details>
@@ -267,7 +269,38 @@ other
 		<canvas id="canvas"></canvas>
 
 		<div id="quality">
-			<span id="fps"></span>
+			<span style="font-size: large; font-weight: bold;">Here for some editing!</span>
+			<table>
+				<tr>
+					<td><span id="fps"></span></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><label>Reinhard Tone Mapping:</label></td>
+					<td></td>
+					<td><input type="checkbox" id="reinhardCheckbox"></td>
+				</tr>
+				<tr>
+					<td><label for="exposureSlider">Exposure:</label></td>
+					<td><span id="exposureValue">0</span></td>
+					<td><input type="range" id="exposureSlider" min="-4" max="4" value="0" step="0.01"></td>
+				</tr>
+				<tr>
+					<td><label for="colorTempSlider">Color Temperature:</label></td>
+					<td><span id="colorTempValue">6600</span></td>
+					<td><input type="range" id="colorTempSlider" min="2000" max="40000" value="6600" step="100"></td>
+				</tr>
+				<tr>
+					<td><label for="whiteBalance">White Balance:</label></td>
+					<td><input type="button" id="whiteBalanceButton" value="Auto"></td>
+					<td>
+						<input type="number" id="whiteBalanceR" min="0" max="10" value="0.837" step="0.001">
+						<input type="number" id="whiteBalanceG" min="0" max="10" value="1.0" step="0.001">
+						<input type="number" id="whiteBalanceB" min="0" max="10" value="0.5" step="0.001">
+					</td>
+				</tr>
+			</table>
 		</div>
 		<div id="caminfo">
 			<span id="camid"></span>

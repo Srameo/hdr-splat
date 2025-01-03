@@ -1,38 +1,6 @@
 let cameras = [
     {
         id: 0,
-        img_name: "00001",
-        width: 1959,
-        height: 1090,
-        position: [
-            -3.0089893469241797, -0.11086489695181866, -3.7527640949141428,
-        ],
-        rotation: [
-            [0.876134201218856, 0.06925962026449776, 0.47706599800804744],
-            [-0.04747421839895102, 0.9972110940209488, -0.057586739349882114],
-            [-0.4797239414934443, 0.027805376500959853, 0.8769787916452908],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 1,
-        img_name: "00009",
-        width: 1959,
-        height: 1090,
-        position: [
-            -2.5199776022057296, -0.09704735754873686, -3.6247725540304545,
-        ],
-        rotation: [
-            [0.9982731285632193, -0.011928707708098955, -0.05751927260507243],
-            [0.0065061360949636325, 0.9955928229282383, -0.09355533724430458],
-            [0.058381769258182864, 0.09301955098900708, 0.9939511719154457],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 2,
         img_name: "00017",
         width: 1959,
         height: 1090,
@@ -46,116 +14,75 @@ let cameras = [
         ],
         fy: 1164.6601287484507,
         fx: 1159.5880733038064,
-    },
-    {
-        id: 3,
-        img_name: "00025",
-        width: 1959,
-        height: 1090,
-        position: [
-            1.2198221749590001, -0.2196687861401182, -2.3183162007028453,
-        ],
-        rotation: [
-            [0.9208648867765482, 0.0012010625395201253, 0.389880004297208],
-            [-0.06298204172269357, 0.987319521752825, 0.14571693239364383],
-            [-0.3847611242348369, -0.1587410451475895, 0.9092635249821667],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 4,
-        img_name: "00033",
-        width: 1959,
-        height: 1090,
-        position: [
-            1.742387858893817, -0.13848225198886954, -2.0566370113193146,
-        ],
-        rotation: [
-            [0.24669889292141334, -0.08370189346592856, -0.9654706879349405],
-            [0.11343747891376445, 0.9919082664242816, -0.05700815184573074],
-            [0.9624300466054861, -0.09545671285663988, 0.2541976029815521],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 5,
-        img_name: "00041",
-        width: 1959,
-        height: 1090,
-        position: [
-            3.6567309419223935, -0.16470990600750707, -1.3458085590422042,
-        ],
-        rotation: [
-            [0.2341293058324528, -0.02968330457755884, -0.9717522161434825],
-            [0.10270823606832301, 0.99469554638321, -0.005638106875665722],
-            [0.9667649592295676, -0.09848690996657204, 0.2359360976431732],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 6,
-        img_name: "00049",
-        width: 1959,
-        height: 1090,
-        position: [
-            3.9013554243203497, -0.2597500978038105, -0.8106154188297828,
-        ],
-        rotation: [
-            [0.6717235545638952, -0.015718162115524837, -0.7406351366386528],
-            [0.055627354673906296, 0.9980224478387622, 0.029270992841185218],
-            [0.7387104058127439, -0.060861588786650656, 0.6712695459756353],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 7,
-        img_name: "00057",
-        width: 1959,
-        height: 1090,
-        position: [4.742994605467533, -0.05591660945412069, 0.9500365976084458],
-        rotation: [
-            [-0.17042655709210375, 0.01207080756938, -0.9852964448542146],
-            [0.1165090336695526, 0.9931575292530063, -0.00798543433078162],
-            [0.9784581921120181, -0.1161568667478904, -0.1706667764862097],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 8,
-        img_name: "00065",
-        width: 1959,
-        height: 1090,
-        position: [4.34676307626522, 0.08168160516967145, 1.0876221470355405],
-        rotation: [
-            [-0.003575447631888379, -0.044792503246552894, -0.9989899137764799],
-            [0.10770152645126597, 0.9931680875192705, -0.04491693593046672],
-            [0.9941768441149182, -0.10775333677534978, 0.0012732004866391048],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 9,
-        img_name: "00073",
-        width: 1959,
-        height: 1090,
-        position: [3.264984351114202, 0.078974937336732, 1.0117200284114904],
-        rotation: [
-            [-0.026919994628162257, -0.1565891128261527, -0.9872968974090509],
-            [0.08444552208239385, 0.983768234577625, -0.1583319754069128],
-            [0.9960643893290491, -0.0876350978794554, -0.013259786205163005],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
+    }
+];
+
+const rgb2xyz = [
+    [0.4124564, 0.3575761, 0.1804375],
+    [0.2126729, 0.7151522, 0.0721750],
+    [0.0193339, 0.1191920, 0.9503041]
 ];
 
 let camera = cameras[0];
+
+function cam2rgb(ccm2) {
+    // 矩阵乘法函数
+    function matrixMultiply(a, b) {
+        const result = Array(a.length).fill().map(() => Array(b[0].length).fill(0));
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < b[0].length; j++) {
+                for (let k = 0; k < b.length; k++) {
+                    result[i][j] += a[i][k] * b[k][j];
+                }
+            }
+        }
+        return result;
+    }
+
+    // 矩阵求逆函数
+    function matrixInverse(matrix) {
+        // 使用高斯-约旦消元法求逆矩阵
+        const n = matrix.length;
+        const augmented = matrix.map((row, i) => {
+            const identity = Array(n).fill(0);
+            identity[i] = 1;
+            return [...row, ...identity];
+        });
+
+        // 前向消元
+        for (let i = 0; i < n; i++) {
+            let pivot = augmented[i][i];
+            for (let j = 0; j < 2 * n; j++) {
+                augmented[i][j] /= pivot;
+            }
+            for (let k = 0; k < n; k++) {
+                if (k !== i) {
+                    const factor = augmented[k][i];
+                    for (let j = 0; j < 2 * n; j++) {
+                        augmented[k][j] -= factor * augmented[i][j];
+                    }
+                }
+            }
+        }
+
+        // 提取逆矩阵部分
+        return augmented.map(row => row.slice(n));
+    }
+
+    // 计算rgb2cam
+    let rgb2cam = matrixMultiply(ccm2, rgb2xyz);
+
+    // 归一化处理
+    for (let i = 0; i < rgb2cam.length; i++) {
+        const rowSum = rgb2cam[i].reduce((a, b) => a + b, 0);
+        rgb2cam[i] = rgb2cam[i].map(val => val / rowSum);
+    }
+
+    // 计算cam2rgb（求逆矩阵）
+    const cam2rgb = matrixInverse(rgb2cam);
+    
+    return cam2rgb;
+}
 
 function getProjectionMatrix(fx, fy, width, height) {
     const znear = 0.2;
@@ -184,15 +111,6 @@ function getViewMatrix(camera) {
     ].flat();
     return camToWorld;
 }
-// function translate4(a, x, y, z) {
-//     return [
-//         ...a.slice(0, 12),
-//         a[0] * x + a[4] * y + a[8] * z + a[12],
-//         a[1] * x + a[5] * y + a[9] * z + a[13],
-//         a[2] * x + a[6] * y + a[10] * z + a[14],
-//         a[3] * x + a[7] * y + a[11] * z + a[15],
-//     ];
-// }
 
 function multiply4(a, b) {
     return [
@@ -295,6 +213,47 @@ function translate4(a, x, y, z) {
     ];
 }
 
+function adjustColorTemperature(kelvin) {
+    // Convert Kelvin to temperature
+    const temperature = kelvin / 100;
+    
+    // Initialize RGB scaling factors
+    let red, green, blue;
+    
+    if (temperature <= 66) {
+        red = 255;
+        green = temperature;
+        green = 99.4708025861 * Math.log(green) - 161.1195681661;
+        
+        if (temperature <= 19) {
+            blue = 0;
+        } else {
+            blue = temperature - 10;
+            blue = 138.5177312231 * Math.log(blue) - 305.0447927307; // -76.0455460929
+        }
+    } else {
+        red = temperature - 60;
+        red = 329.698727446 * Math.pow(red, -0.1332047592);
+        
+        green = temperature - 60;
+        green = 288.1221695283 * Math.pow(green, -0.0755148492);
+        
+        blue = 255;
+    }
+    
+    // Clamp RGB values to the range [0, 255]
+    red = Math.min(255, Math.max(0, red));
+    green = Math.min(255, Math.max(0, green));
+    blue = Math.min(255, Math.max(0, blue));
+    
+    // Calculate scaling factors
+    const r_scale = red / 255;
+    const g_scale = green / 255;
+    const b_scale = blue / 255;
+    
+    return [r_scale, g_scale, b_scale];
+}
+
 function createWorker(self) {
     let buffer;
     let vertexCount = 0;
@@ -349,11 +308,12 @@ function createWorker(self) {
         if (!buffer) return;
         const f_buffer = new Float32Array(buffer);
         const u_buffer = new Uint8Array(buffer);
+        const u16_buffer = new Uint16Array(buffer); // for reading 16bit color
 
         var texwidth = 1024 * 2; // Set to your desired width
         var texheight = Math.ceil((2 * vertexCount) / texwidth); // Set to your desired height
         var texdata = new Uint32Array(texwidth * texheight * 4); // 4 components per pixel (RGBA)
-        var texdata_c = new Uint8Array(texdata.buffer);
+        var texdata_c16 = new Uint16Array(texdata.buffer); // for writing 16bit color
         var texdata_f = new Float32Array(texdata.buffer);
 
         // Here we convert from a .splat file buffer into a texture
@@ -362,27 +322,27 @@ function createWorker(self) {
         // load it into webgl.
         for (let i = 0; i < vertexCount; i++) {
             // x, y, z
-            texdata_f[8 * i + 0] = f_buffer[8 * i + 0];
-            texdata_f[8 * i + 1] = f_buffer[8 * i + 1];
-            texdata_f[8 * i + 2] = f_buffer[8 * i + 2];
+            texdata_f[8 * i + 0] = f_buffer[9 * i + 0]; // 32 bit float
+            texdata_f[8 * i + 1] = f_buffer[9 * i + 1]; // 32 bit float
+            texdata_f[8 * i + 2] = f_buffer[9 * i + 2]; // 32 bit float
 
             // r, g, b, a
-            texdata_c[4 * (8 * i + 7) + 0] = u_buffer[32 * i + 24 + 0];
-            texdata_c[4 * (8 * i + 7) + 1] = u_buffer[32 * i + 24 + 1];
-            texdata_c[4 * (8 * i + 7) + 2] = u_buffer[32 * i + 24 + 2];
-            texdata_c[4 * (8 * i + 7) + 3] = u_buffer[32 * i + 24 + 3];
+            texdata_c16[2 * (8 * i + 6) + 0] = u16_buffer[2 * (9 * i + 6) + 0]; // 16 bit color
+            texdata_c16[2 * (8 * i + 6) + 1] = u16_buffer[2 * (9 * i + 6) + 1]; // 16 bit color    
+            texdata_c16[2 * (8 * i + 6) + 2] = u16_buffer[2 * (9 * i + 6) + 2]; // 16 bit color
+            texdata_c16[2 * (8 * i + 6) + 3] = u16_buffer[2 * (9 * i + 6) + 3]; // 16 bit color
 
             // quaternions
             let scale = [
-                f_buffer[8 * i + 3 + 0],
-                f_buffer[8 * i + 3 + 1],
-                f_buffer[8 * i + 3 + 2],
+                f_buffer[9 * i + 3 + 0],
+                f_buffer[9 * i + 3 + 1],
+                f_buffer[9 * i + 3 + 2],
             ];
             let rot = [
-                (u_buffer[32 * i + 28 + 0] - 128) / 128,
-                (u_buffer[32 * i + 28 + 1] - 128) / 128,
-                (u_buffer[32 * i + 28 + 2] - 128) / 128,
-                (u_buffer[32 * i + 28 + 3] - 128) / 128,
+                (u_buffer[4 * (9 * i + 8) + 0] - 128) / 128,
+                (u_buffer[4 * (9 * i + 8) + 1] - 128) / 128,
+                (u_buffer[4 * (9 * i + 8) + 2] - 128) / 128,
+                (u_buffer[4 * (9 * i + 8) + 3] - 128) / 128,
             ];
 
             // Compute the matrix product of S and R (M = S * R)
@@ -409,9 +369,9 @@ function createWorker(self) {
                 M[2] * M[2] + M[5] * M[5] + M[8] * M[8],
             ];
 
-            texdata[8 * i + 4] = packHalf2x16(4 * sigma[0], 4 * sigma[1]);
-            texdata[8 * i + 5] = packHalf2x16(4 * sigma[2], 4 * sigma[3]);
-            texdata[8 * i + 6] = packHalf2x16(4 * sigma[4], 4 * sigma[5]);
+            texdata[8 * i + 3] = packHalf2x16(4 * sigma[0], 4 * sigma[1]); // 32 bit float
+            texdata[8 * i + 4] = packHalf2x16(4 * sigma[2], 4 * sigma[3]); // 32 bit float
+            texdata[8 * i + 5] = packHalf2x16(4 * sigma[4], 4 * sigma[5]); // 32 bit float
         }
 
         self.postMessage({ texdata, texwidth, texheight }, [texdata.buffer]);
@@ -439,9 +399,9 @@ function createWorker(self) {
         let sizeList = new Int32Array(vertexCount);
         for (let i = 0; i < vertexCount; i++) {
             let depth =
-                ((viewProj[2] * f_buffer[8 * i + 0] +
-                    viewProj[6] * f_buffer[8 * i + 1] +
-                    viewProj[10] * f_buffer[8 * i + 2]) *
+                ((viewProj[2] * f_buffer[9 * i + 0] +
+                    viewProj[6] * f_buffer[9 * i + 1] +
+                    viewProj[10] * f_buffer[9 * i + 2]) *
                     4096) |
                 0;
             sizeList[i] = depth;
@@ -471,153 +431,6 @@ function createWorker(self) {
         ]);
     }
 
-    function processPlyBuffer(inputBuffer) {
-        const ubuf = new Uint8Array(inputBuffer);
-        // 10KB ought to be enough for a header...
-        const header = new TextDecoder().decode(ubuf.slice(0, 1024 * 10));
-        const header_end = "end_header\n";
-        const header_end_index = header.indexOf(header_end);
-        if (header_end_index < 0)
-            throw new Error("Unable to read .ply file header");
-        const vertexCount = parseInt(/element vertex (\d+)\n/.exec(header)[1]);
-        console.log("Vertex Count", vertexCount);
-        let row_offset = 0,
-            offsets = {},
-            types = {};
-        const TYPE_MAP = {
-            double: "getFloat64",
-            int: "getInt32",
-            uint: "getUint32",
-            float: "getFloat32",
-            short: "getInt16",
-            ushort: "getUint16",
-            uchar: "getUint8",
-        };
-        for (let prop of header
-            .slice(0, header_end_index)
-            .split("\n")
-            .filter((k) => k.startsWith("property "))) {
-            const [p, type, name] = prop.split(" ");
-            const arrayType = TYPE_MAP[type] || "getInt8";
-            types[name] = arrayType;
-            offsets[name] = row_offset;
-            row_offset += parseInt(arrayType.replace(/[^\d]/g, "")) / 8;
-        }
-        console.log("Bytes per row", row_offset, types, offsets);
-
-        let dataView = new DataView(
-            inputBuffer,
-            header_end_index + header_end.length,
-        );
-        let row = 0;
-        const attrs = new Proxy(
-            {},
-            {
-                get(target, prop) {
-                    if (!types[prop]) throw new Error(prop + " not found");
-                    return dataView[types[prop]](
-                        row * row_offset + offsets[prop],
-                        true,
-                    );
-                },
-            },
-        );
-
-        console.time("calculate importance");
-        let sizeList = new Float32Array(vertexCount);
-        let sizeIndex = new Uint32Array(vertexCount);
-        for (row = 0; row < vertexCount; row++) {
-            sizeIndex[row] = row;
-            if (!types["scale_0"]) continue;
-            const size =
-                Math.exp(attrs.scale_0) *
-                Math.exp(attrs.scale_1) *
-                Math.exp(attrs.scale_2);
-            const opacity = 1 / (1 + Math.exp(-attrs.opacity));
-            sizeList[row] = size * opacity;
-        }
-        console.timeEnd("calculate importance");
-
-        console.time("sort");
-        sizeIndex.sort((b, a) => sizeList[a] - sizeList[b]);
-        console.timeEnd("sort");
-
-        // 6*4 + 4 + 4 = 8*4
-        // XYZ - Position (Float32)
-        // XYZ - Scale (Float32)
-        // RGBA - colors (uint8)
-        // IJKL - quaternion/rot (uint8)
-        const rowLength = 3 * 4 + 3 * 4 + 4 + 4;
-        const buffer = new ArrayBuffer(rowLength * vertexCount);
-
-        console.time("build buffer");
-        for (let j = 0; j < vertexCount; j++) {
-            row = sizeIndex[j];
-
-            const position = new Float32Array(buffer, j * rowLength, 3);
-            const scales = new Float32Array(buffer, j * rowLength + 4 * 3, 3);
-            const rgba = new Uint8ClampedArray(
-                buffer,
-                j * rowLength + 4 * 3 + 4 * 3,
-                4,
-            );
-            const rot = new Uint8ClampedArray(
-                buffer,
-                j * rowLength + 4 * 3 + 4 * 3 + 4,
-                4,
-            );
-
-            if (types["scale_0"]) {
-                const qlen = Math.sqrt(
-                    attrs.rot_0 ** 2 +
-                        attrs.rot_1 ** 2 +
-                        attrs.rot_2 ** 2 +
-                        attrs.rot_3 ** 2,
-                );
-
-                rot[0] = (attrs.rot_0 / qlen) * 128 + 128;
-                rot[1] = (attrs.rot_1 / qlen) * 128 + 128;
-                rot[2] = (attrs.rot_2 / qlen) * 128 + 128;
-                rot[3] = (attrs.rot_3 / qlen) * 128 + 128;
-
-                scales[0] = Math.exp(attrs.scale_0);
-                scales[1] = Math.exp(attrs.scale_1);
-                scales[2] = Math.exp(attrs.scale_2);
-            } else {
-                scales[0] = 0.01;
-                scales[1] = 0.01;
-                scales[2] = 0.01;
-
-                rot[0] = 255;
-                rot[1] = 0;
-                rot[2] = 0;
-                rot[3] = 0;
-            }
-
-            position[0] = attrs.x;
-            position[1] = attrs.y;
-            position[2] = attrs.z;
-
-            if (types["f_dc_0"]) {
-                const SH_C0 = 0.28209479177387814;
-                rgba[0] = (0.5 + SH_C0 * attrs.f_dc_0) * 255;
-                rgba[1] = (0.5 + SH_C0 * attrs.f_dc_1) * 255;
-                rgba[2] = (0.5 + SH_C0 * attrs.f_dc_2) * 255;
-            } else {
-                rgba[0] = attrs.red;
-                rgba[1] = attrs.green;
-                rgba[2] = attrs.blue;
-            }
-            if (types["opacity"]) {
-                rgba[3] = (1 / (1 + Math.exp(-attrs.opacity))) * 255;
-            } else {
-                rgba[3] = 255;
-            }
-        }
-        console.timeEnd("build buffer");
-        return buffer;
-    }
-
     const throttledSort = () => {
         if (!sortRunning) {
             sortRunning = true;
@@ -634,13 +447,7 @@ function createWorker(self) {
 
     let sortRunning;
     self.onmessage = (e) => {
-        if (e.data.ply) {
-            vertexCount = 0;
-            runSort(viewProj);
-            buffer = processPlyBuffer(e.data.ply);
-            vertexCount = Math.floor(buffer.byteLength / rowLength);
-            postMessage({ buffer: buffer, save: !!e.data.save });
-        } else if (e.data.buffer) {
+        if (e.data.buffer) {
             buffer = e.data.buffer;
             vertexCount = e.data.vertexCount;
         } else if (e.data.vertexCount) {
@@ -680,7 +487,7 @@ void main () {
     }
 
     uvec4 cov = texelFetch(u_texture, ivec2(((uint(index) & 0x3ffu) << 1) | 1u, uint(index) >> 10), 0);
-    vec2 u1 = unpackHalf2x16(cov.x), u2 = unpackHalf2x16(cov.y), u3 = unpackHalf2x16(cov.z);
+    vec2 u1 = unpackHalf2x16(cen.w), u2 = unpackHalf2x16(cov.x), u3 = unpackHalf2x16(cov.y);
     mat3 Vrk = mat3(u1.x, u1.y, u2.x, u1.y, u2.y, u3.x, u2.x, u3.x, u3.y);
 
     mat3 J = mat3(
@@ -701,7 +508,7 @@ void main () {
     vec2 majorAxis = min(sqrt(2.0 * lambda1), 1024.0) * diagonalVector;
     vec2 minorAxis = min(sqrt(2.0 * lambda2), 1024.0) * vec2(diagonalVector.y, -diagonalVector.x);
 
-    vColor = clamp(pos2d.z/pos2d.w+1.0, 0.0, 1.0) * vec4((cov.w) & 0xffu, (cov.w >> 8) & 0xffu, (cov.w >> 16) & 0xffu, (cov.w >> 24) & 0xffu) / 255.0;
+    vColor = clamp(pos2d.z/pos2d.w+1.0, 0.0, 1.0) * vec4((cov.z) & 0xffffu, (cov.z >> 16) & 0xffffu, (cov.w) & 0xffffu, (cov.w >> 16) & 0xffffu) / 4096.0;
     vPosition = position;
 
     vec2 vCenter = vec2(pos2d) / pos2d.w;
@@ -717,23 +524,63 @@ const fragmentShaderSource = `
 #version 300 es
 precision highp float;
 
+// 输入变量
 in vec4 vColor;
 in vec2 vPosition;
+uniform float u_exposure;
+uniform bool u_reinhard;
+uniform vec3 u_gain;
+uniform vec3 u_wb;
+uniform mat3 u_rgb2cam;
 
+// 输出颜色
 out vec4 fragColor;
 
+// 定义rgb2xyz矩阵
+const mat3 isp_matrix = transpose(mat3(
+     3.5538, -0.3864, -0.1472,
+    -0.2645,  1.3691, -0.3950,
+     0.0420, -0.3518,  2.0370
+));
+
+// 伽玛校正函数
+vec3 gamma_correct(vec3 linear) {
+    float eps = 1e-6;
+    vec3 srgb0 = (323.0 / 25.0) * linear;
+    vec3 srgb1 = (211.0 * pow(max(vec3(eps), linear), vec3(5.0 / 12.0)) - 11.0) / 200.0;
+    return mix(srgb0, srgb1, step(0.0031308, linear));
+}
+
 void main () {
+
+    mat3 inv_wb = mat3(
+        1.0 / u_wb.r, 0.0,         0.0,
+        0.0,         1.0 / u_wb.g, 0.0,
+        0.0,         0.0,         1.0 / u_wb.b
+    );
+    vec3 linearColor = u_rgb2cam * inv_wb * vColor.rgb;
+    linearColor = u_gain * linearColor;
+    if (u_reinhard) {
+        float gray = 0.2989 * linearColor.r + 0.5870 * linearColor.g + 0.1140 * linearColor.b;
+        linearColor = linearColor / (1.0 + gray);
+    }
+    vec3 exposureColor = linearColor * pow(2.0, u_exposure);
+    vec3 correctedColor = gamma_correct(exposureColor);
+    
     float A = -dot(vPosition, vPosition);
     if (A < -4.0) discard;
     float B = exp(A) * vColor.a;
-    fragColor = vec4(B * vColor.rgb, B);
+    
+    fragColor = vec4(clamp(B * correctedColor, 0.0, 1.0), B);
 }
 
 `.trim();
 
 let defaultViewMatrix = [
-    0.47, 0.04, 0.88, 0, -0.11, 0.99, 0.02, 0, -0.88, -0.11, 0.47, 0, 0.07,
-    0.03, 6.55, 1,
+    0.9998813418672372, 0.013742375651625236, -0.0069605529394208224, 0,
+    -0.014268370388586709, 0.996512943252834, -0.08220929105659476, 0,
+    0.00580653013657589, 0.08229885200307129, 0.9965907801935302, 0,
+    0, 0, 0, 1
 ];
 let viewMatrix = defaultViewMatrix;
 async function main() {
@@ -743,17 +590,42 @@ async function main() {
         viewMatrix = JSON.parse(decodeURIComponent(location.hash.slice(1)));
         carousel = false;
     } catch (err) {}
-    const url = new URL(
-        // "nike.splat",
-        // location.href,
-        params.get("url") || "train.splat",
-        "https://huggingface.co/cakewalk/splat-data/resolve/main/",
-    );
-    const req = await fetch(url, {
-        mode: "cors", // no-cors, *cors, same-origin
-        credentials: "omit", // include, *same-origin, omit
+    const splatUrl = "./gardenlights.splat";
+    const req = await fetch(splatUrl, {
+        mode: "cors",
+        credentials: "omit",
     });
     console.log(req);
+
+    const metaDataJson = "./gardenlights.json";
+    const metaDataReq = await fetch(metaDataJson, {
+        mode: "cors",
+        credentials: "omit",
+    });
+    const metaData = await metaDataReq.json();
+    console.log("Meta Data:", metaData);
+
+    const initWhiteBalance = [
+        parseFloat(metaData.AsShotNeutral.split(" ")[0]),
+        parseFloat(metaData.AsShotNeutral.split(" ")[1]),
+        parseFloat(metaData.AsShotNeutral.split(" ")[2]),
+    ];
+    
+    const ccm2List = metaData.ColorMatrix2.split(" ");
+    const ccm2 = [
+        [parseFloat(ccm2List[0]), parseFloat(ccm2List[1]), parseFloat(ccm2List[2])],
+        [parseFloat(ccm2List[3]), parseFloat(ccm2List[4]), parseFloat(ccm2List[5])],
+        [parseFloat(ccm2List[6]), parseFloat(ccm2List[7]), parseFloat(ccm2List[8])]
+    ];
+    const rgb2cam = cam2rgb(ccm2);
+
+    const whiteBalanceR = document.getElementById("whiteBalanceR");
+    const whiteBalanceG = document.getElementById("whiteBalanceG");
+    const whiteBalanceB = document.getElementById("whiteBalanceB");
+    whiteBalanceR.value = initWhiteBalance[0];
+    whiteBalanceG.value = initWhiteBalance[1];
+    whiteBalanceB.value = initWhiteBalance[2];
+
     if (req.status != 200)
         throw new Error(req.status + " Unable to load " + req.url);
 
@@ -924,11 +796,11 @@ async function main() {
         // if (document.activeElement != document.body) return;
         carousel = false;
         if (!activeKeys.includes(e.code)) activeKeys.push(e.code);
-        if (/\d/.test(e.key)) {
-            currentCameraIndex = parseInt(e.key);
-            camera = cameras[currentCameraIndex];
-            viewMatrix = getViewMatrix(camera);
-        }
+        // if (/\d/.test(e.key)) {
+        //     currentCameraIndex = parseInt(e.key);
+        //     camera = cameras[currentCameraIndex];
+        //     viewMatrix = getViewMatrix(camera);
+        // }
         if (["-", "_"].includes(e.key)) {
             currentCameraIndex =
                 (currentCameraIndex + cameras.length - 1) % cameras.length;
@@ -1381,49 +1253,6 @@ async function main() {
 
     frame();
 
-    const isPly = (splatData) =>
-        splatData[0] == 112 &&
-        splatData[1] == 108 &&
-        splatData[2] == 121 &&
-        splatData[3] == 10;
-
-    const selectFile = (file) => {
-        const fr = new FileReader();
-        if (/\.json$/i.test(file.name)) {
-            fr.onload = () => {
-                cameras = JSON.parse(fr.result);
-                viewMatrix = getViewMatrix(cameras[0]);
-                projectionMatrix = getProjectionMatrix(
-                    camera.fx / downsample,
-                    camera.fy / downsample,
-                    canvas.width,
-                    canvas.height,
-                );
-                gl.uniformMatrix4fv(u_projection, false, projectionMatrix);
-
-                console.log("Loaded Cameras");
-            };
-            fr.readAsText(file);
-        } else {
-            stopLoading = true;
-            fr.onload = () => {
-                splatData = new Uint8Array(fr.result);
-                console.log("Loaded", Math.floor(splatData.length / rowLength));
-
-                if (isPly(splatData)) {
-                    // ply file magic header means it should be handled differently
-                    worker.postMessage({ ply: splatData.buffer, save: true });
-                } else {
-                    worker.postMessage({
-                        buffer: splatData.buffer,
-                        vertexCount: Math.floor(splatData.length / rowLength),
-                    });
-                }
-            };
-            fr.readAsArrayBuffer(file);
-        }
-    };
-
     window.addEventListener("hashchange", (e) => {
         try {
             viewMatrix = JSON.parse(decodeURIComponent(location.hash.slice(1)));
@@ -1438,11 +1267,6 @@ async function main() {
     document.addEventListener("dragenter", preventDefault);
     document.addEventListener("dragover", preventDefault);
     document.addEventListener("dragleave", preventDefault);
-    document.addEventListener("drop", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        selectFile(e.dataTransfer.files[0]);
-    });
 
     let bytesRead = 0;
     let lastVertexCount = -1;
@@ -1456,26 +1280,93 @@ async function main() {
         bytesRead += value.length;
 
         if (vertexCount > lastVertexCount) {
-            if (!isPly(splatData)) {
-                worker.postMessage({
-                    buffer: splatData.buffer,
-                    vertexCount: Math.floor(bytesRead / rowLength),
-                });
-            }
-            lastVertexCount = vertexCount;
-        }
-    }
-    if (!stopLoading) {
-        if (isPly(splatData)) {
-            // ply file magic header means it should be handled differently
-            worker.postMessage({ ply: splatData.buffer, save: false });
-        } else {
             worker.postMessage({
                 buffer: splatData.buffer,
                 vertexCount: Math.floor(bytesRead / rowLength),
             });
+            lastVertexCount = vertexCount;
         }
     }
+    if (!stopLoading) {
+        worker.postMessage({
+            buffer: splatData.buffer,
+            vertexCount: Math.floor(bytesRead / rowLength),
+        });
+    }
+
+    const u_rgb2cam = gl.getUniformLocation(program, "u_rgb2cam");
+    const transposedRgb2cam = [
+        rgb2cam[0][0], rgb2cam[1][0], rgb2cam[2][0],
+        rgb2cam[0][1], rgb2cam[1][1], rgb2cam[2][1], 
+        rgb2cam[0][2], rgb2cam[1][2], rgb2cam[2][2]
+    ];
+    gl.uniformMatrix3fv(u_rgb2cam, false, new Float32Array(transposedRgb2cam));
+
+    // 获取exposure uniform位置
+    const u_exposure = gl.getUniformLocation(program, "u_exposure");
+    
+    // 设置初始值
+    gl.uniform1f(u_exposure, 0.0);
+    
+    // 添加slider事件监听
+    const exposureSlider = document.getElementById("exposureSlider");
+    const exposureValue = document.getElementById("exposureValue");
+    
+    exposureSlider.addEventListener("input", (e) => {
+        const value = parseFloat(e.target.value);
+        exposureValue.textContent = value.toFixed(2);
+        gl.uniform1f(u_exposure, value);
+    });
+
+    // 添加reinhard checkbox
+    const reinhardCheckbox = document.getElementById("reinhardCheckbox");
+    const u_reinhard = gl.getUniformLocation(program, "u_reinhard");
+    
+    // 设置初始值
+    gl.uniform1i(u_reinhard, reinhardCheckbox.checked);
+    
+    // 添加checkbox事件监听
+    reinhardCheckbox.addEventListener("change", (e) => {
+        gl.uniform1i(u_reinhard, e.target.checked);
+    });
+
+    const colorTempSlider = document.getElementById("colorTempSlider");
+    const colorTempValue = document.getElementById("colorTempValue");
+    const u_gain = gl.getUniformLocation(program, "u_gain");
+    // 设置初始色温
+    const initialTemp = parseFloat(colorTempSlider.value);
+    const initialScales = adjustColorTemperature(initialTemp);
+    gl.uniform3fv(u_gain, initialScales);
+    
+    // 添加slider事件监听
+    colorTempSlider.addEventListener("input", (e) => {
+        const kelvin = parseFloat(e.target.value);
+        colorTempValue.textContent = kelvin;
+        const scales = adjustColorTemperature(kelvin);
+        gl.uniform3fv(u_gain, scales);
+    });
+
+    const u_wb = gl.getUniformLocation(program, "u_wb");
+    gl.uniform3fv(u_wb, [initWhiteBalance[0], initWhiteBalance[1], initWhiteBalance[2]]);
+
+    function adjustWhiteBalance() {
+        const whiteBalanceRValue = parseFloat(whiteBalanceR.value);
+        const whiteBalanceGValue = parseFloat(whiteBalanceG.value);
+        const whiteBalanceBValue = parseFloat(whiteBalanceB.value);
+        gl.uniform3fv(u_wb, [whiteBalanceRValue, whiteBalanceGValue, whiteBalanceBValue]);
+    }
+
+    whiteBalanceR.addEventListener("input", adjustWhiteBalance);
+    whiteBalanceG.addEventListener("input", adjustWhiteBalance);
+    whiteBalanceB.addEventListener("input", adjustWhiteBalance);
+
+    const whiteBalanceButton = document.getElementById("whiteBalanceButton");
+    whiteBalanceButton.addEventListener("click", (e) => {
+        whiteBalanceR.value = initWhiteBalance[0];
+        whiteBalanceG.value = initWhiteBalance[1];
+        whiteBalanceB.value = initWhiteBalance[2];
+        adjustWhiteBalance();
+    });
 }
 
 main().catch((err) => {

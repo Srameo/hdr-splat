@@ -6,6 +6,7 @@ import numpy as np
 import argparse
 from io import BytesIO
 
+WHITE_POINT = 4096  # 12 bit
 
 def process_ply_to_splat(ply_file_path):
     plydata = PlyData.read(ply_file_path)
@@ -28,18 +29,20 @@ def process_ply_to_splat(ply_file_path):
             [v["rot_0"], v["rot_1"], v["rot_2"], v["rot_3"]],
             dtype=np.float32,
         )
-        SH_C0 = 0.28209479177387814
         color = np.array(
             [
-                0.5 + SH_C0 * v["f_dc_0"],
-                0.5 + SH_C0 * v["f_dc_1"],
-                0.5 + SH_C0 * v["f_dc_2"],
+                np.exp(v["f_dc_0"]),
+                np.exp(v["f_dc_1"]),
+                np.exp(v["f_dc_2"]),
                 1 / (1 + np.exp(-v["opacity"])),
             ]
         )
         buffer.write(position.tobytes())
         buffer.write(scales.tobytes())
-        buffer.write((color * 255).clip(0, 255).astype(np.uint8).tobytes())
+        # max_color = np.max(color[:3])
+        # ratio = WHITE_POINT if 65535 / max_color < WHITE_POINT else 65535 / max_color
+        ratio = WHITE_POINT
+        buffer.write((color * ratio).clip(0, 65535).astype(np.uint16).tobytes())
         buffer.write(
             ((rot / np.linalg.norm(rot)) * 128 + 128)
             .clip(0, 255)
@@ -61,7 +64,7 @@ def main():
         "input_files", nargs="+", help="The input PLY files to process."
     )
     parser.add_argument(
-        "--output", "-o", default="output.splat", help="The output SPLAT file."
+        "--output", "-o", default="output_16bit.splat", help="The output SPLAT file."
     )
     args = parser.parse_args()
     for input_file in args.input_files:
