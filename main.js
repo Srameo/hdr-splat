@@ -590,14 +590,14 @@ async function main() {
         viewMatrix = JSON.parse(decodeURIComponent(location.hash.slice(1)));
         carousel = false;
     } catch (err) {}
-    const splatUrl = "./gardenlights.splat";
+    const splatUrl = "https://srameo.github.io/projects/le3d/assets/splats/gardenlights/latest.splat";
     const req = await fetch(splatUrl, {
         mode: "cors",
         credentials: "omit",
     });
     console.log(req);
 
-    const metaDataJson = "./gardenlights.json";
+    const metaDataJson = "https://srameo.github.io/projects/le3d/assets/splats/gardenlights/meta_data.json";
     const metaDataReq = await fetch(metaDataJson, {
         mode: "cors",
         credentials: "omit",

@@ -1,5 +1,7 @@
 # HDR splat
 
+This is a WebGL implementation of a real-time **HDR** renderer for [LE3D](https://github.com/Srameo/LE3D).
+
 Please refer to [https://srameo.github.io/projects/le3d](https://srameo.github.io/projects/le3d) for some selected scenes.
 
 <details>
